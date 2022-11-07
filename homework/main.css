@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.conteiner{
+    width: 60%;
+    height: 100vh;
+    margin: 0 auto;
+}
+.time{
+    width: 100%;
+    height: 20vh;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.buttons{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.buttons >button{
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #ff0000c8;
+    border: none;
+    color: #fff;
+}
+.buttons>button:hover{
+    background-color: #a30f0f;    
+    box-shadow: 1px 1px 10px #ff0000c8;
+}
+.messageConteiner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #727070a2;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.message{
+    position: relative;
+    top: 110px;
+    width: 450px;
+    border-radius: 20px;
+    height: 150px;
+    border: none;
+    box-shadow:  0 0 10px black;
+    background-color: white;
+}
+
+.message-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.message-buttons>button{
+    min-width: 70px;
+    min-height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: #fff;
+    margin-top: 20px;
+}
+.message-buttons>button:first-child{
+    background-color: #d92929;
+}
+.message-buttons>button:first-child:hover{
+    box-shadow: 0 0 3px #d92929;
+}
+.message-buttons>button:last-child{
+    background-color: #1e871e;
+}
+.message-buttons>button:last-child:hover{
+    box-shadow: 0 0 3px #1e871e;
+}
+.messageText{
+    width: 100%;
+    height: 40%;
+    border-top: 2px solid #9f9b9b7b;
+    border-bottom: 2px solid #9f9b9b7b;
+    margin-top: 20px;
+}
+.text{
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.puzzleFields{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.elementsField, .finishedPicture{
+    width: 360px;
+    height: 360px;
+    box-shadow: 0 0 10px gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-shrink: 0;
+    margin-left: 20px;  
+}
+
+.picture, .picture-check{
+    width: 120px;
+    height: 120px;
+}
+.picture{
+    background-image: url(./img/1538381293_1.jpg);
+}
+.picture[data='1']{
+    background-position: 0 0;
+}
+.picture[data='2']{
+    background-position: -120px 0;
+}
+.picture[data='3']{
+    background-position: -240px 0;
+}
+.picture[data='4']{
+    background-position: 0 -120px;
+}
+.picture[data='5']{
+    background-position: -120px -120px;
+}
+.picture[data='6']{
+    background-position: -240px -120px;
+}
+.picture[data='7']{
+    background-position: 0 -240px;
+}
+.picture[data='8']{
+    background-position: -120px -240px;
+}
+.picture[data='9']{
+    background-position: -240px -240px;
+}
+
+button[disabled]{
+    background-color: #e96262;
+}
+button[disabled]:hover{
+    box-shadow: none;
+    background-color: #e96262;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
